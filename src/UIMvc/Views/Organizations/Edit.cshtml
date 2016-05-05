@@ -1,0 +1,22 @@
+﻿@using NExtensions
+@model Kiehl.App.Business.Models.Organizations.OrganizationEditorForm
+
+@{
+    ViewBag.Title = "Add New Organization";
+
+    if (Model.ParentOrganizationId.HasValue)
+    {
+        ViewBag.Title += " to {0}".FormatWith(Model.ParentOrganizationName);
+    }
+}
+
+@Html.Partial("_ModelErrors")
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Edit Organization</h3>
+    </div>
+    <div class="panel-body">
+        @Html.EditorForModel()
+    </div>
+</div>

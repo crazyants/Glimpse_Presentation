@@ -1,0 +1,43 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")"><i class="fa fa-dollar"></i> Example App</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="@Url.RouteUrl("Default", new {controller = "Organizations", action = string.Empty, id = string.Empty})"><span class="fa fa-building-o"></span> Organizations</a></li>
+                <li>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-wrench"></span> Development <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Tools</li>
+                        <li><a href="javascript:(function(){document.cookie='glimpsePolicy=;path=/;expires=Sat, 01 Jan 2050 12:00:00 GMT;';window.location.reload();})();"><span class="fa fa-toggle-off"></span> Disable Glimpse</a></li>
+                        }
+                        else
+                        {
+                        <li><a href="javascript:(function(){document.cookie='glimpsePolicy=On;path=/;expires=Sat, 01 Jan 2050 12:00:00 GMT;';window.location.reload();})();"><span class="fa fa-toggle-on"></span> Enable Glimpse</a></li>
+                        }
+                        <li class="dropdown-header">Client Side Docs</li>
+                        <li><a href="http://getbootstrap.com/" target="_blank"><span class="fa fa-bookmark"></span> Bootstrap</a></li>
+                        <li><a href="https://bootswatch.com/" target="_blank"><span class="fa fa-bookmark"></span> Bootswatch</a></li>
+                        <li><a href="http://www.bootstrap-switch.org/" target="_blank"><span class="fa fa-bookmark"></span> Bootstrap Switch</a></li>
+                        <li><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"><span class="fa fa-bookmark"></span> Font Awesome</a></li>
+                        <li><a href="http://api.jquery.com/" target="_blank"><span class="fa fa-bookmark"></span> jQuery</a></li>
+                        <li class="dropdown-header">Server Side Docs</li>
+                        <li><a href="http://autofac.org/" target="_blank"><span class="fa fa-bookmark"></span> Autofac</a></li>
+                        <li><a href="http://nlog-project.org/" target="_blank"><span class="fa fa-bookmark"></span> NLog</a></li>
+                        <li><a href="https://github.com/jbogard/MediatR" target="_blank"><span class="fa fa-bookmark"></span> Mediatr</a></li>
+                        <li><a href="https://github.com/halcharger/NExtensions" target="_blank"><span class="fa fa-bookmark"></span> NExtensions</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#"><span class="fa fa-question"></span> Help</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
