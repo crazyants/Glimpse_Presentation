@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIMvc", "src\UIMvc\UIMvc.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "src\Business\Business.csproj", "{A1BCC595-D7BB-46F9-9923-718C08E50587}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{18F4113B-1D81-4C90-96EA-86D9A7D9B3D1}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		NOTES.md = NOTES.md
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
