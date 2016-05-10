@@ -26,6 +26,8 @@ namespace Kiehl.App.UIMvc
 
             var container = builder.Build();
 
+            container.ActivateGlimpse();
+
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
 
             onReady(container);
